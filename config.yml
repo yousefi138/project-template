@@ -1,0 +1,4 @@
+default:
+  project.dir: "."
+local:
+  project.dir: "."
