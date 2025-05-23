@@ -7,8 +7,10 @@ if (length(args) > 0)
 paths <- config::get(config=config.name)
 print(paths)
 
-paths$data.dir <- file.path(paths$project.dir, "data")
-paths$output.dir <- file.path(paths$project.dir, "results")
+paths$data <- file.path(paths$project, "data")
+paths$output <- file.path(paths$project, "results")
+paths$cache <- file.path(paths$project, "results", "analysis-cache")
+paths$scripts <- file.path(paths$project, "scripts")
 print(paths)
 
 ## 
